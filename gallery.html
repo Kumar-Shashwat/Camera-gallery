@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/gallery.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="gallery-cont">
+            <!-- <div class="media-cont">
+                <div class="media">
+                    <video autoplay  src="project video saamples/VID-20210801-WA0002.mp4"></video>
+                </div>
+                <div class="delete action-btn" > DELETE</div>
+                <div class="download action-btn"> DOWNLOAD</div>
+            </div> -->
+    
+        </div>
+
+        <div class  = "back"> Go to Camera</div>
+
+
+
+        <!-- scripts -->
+        <script src="Javascript/DB.js" async defer></script>
+        <script src = "Javascript/gallery.js"  async defer> </script>
+        
+        <script>
+            let backElem = document.querySelector(".back");
+            backElem.addEventListener("click", (e) => {
+                location.assign("./index.html");
+            })
+        </script>
+    </body>
+</html>

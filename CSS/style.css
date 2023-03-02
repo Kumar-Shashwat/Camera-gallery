@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black ;
+    margin: 0px;
+    color: white;
+}
+
+::-webkit-scrollbar {
+width: 10px;
+height: 10px; }
+
+::-webkit-scrollbar-thumb {
+background-color: grey;
+-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
+    /* border-radius:30%; */
+
+ }
+
+
+.video-container{
+    width : 100vw;
+    height: 100vh;
+}
+
+.video{
+    height: 99.5%;
+    width: 100%;
+}
+
+.action-cont{
+    height: 10rem;
+    width: 4rem;
+    /* background-color: lightblue; */
+    position: absolute;
+    right: 3rem;
+    top: calc((100vh - 15rem)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* opacity: 0.1; */
+
+}
+
+.action-cont > *{
+    
+    height: 4rem;
+    width: 100%;
+    /* background-color: lightcoral; */
+    border-radius: 50%;
+    /* margin: 1rem; */
+    border: 5px solid grey ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.record-btn{
+    
+    background-color: red;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.capture-btn{
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.scale-record{
+    animation-name: scale-record;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes scale-record{
+    0% {
+        transform:scale(0.8);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+} 
+
+.scale-capture{
+    animation-name: scale-capture;
+    animation-iteration-count:infinite;
+    animation-duration: 1s;
+} 
+      
+
+@keyframes scale-capture{
+    0% {
+        transform:scale(0.8);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }   
+} 
+
+.timer-cont{
+    position: absolute;
+    /* height: 4rem;
+    width: 10rem; */
+
+    top: 12rem;
+    right:1rem;
+
+    align-items: center;
+
+    color: aqua;
+
+    font-size:  1rem;
+}
+
+.filter-cont{
+    position: absolute;
+    /* top: calc((100vh - 40rem)/2); */
+    top: 0;
+    left:0;
+
+    height: 100%;
+    width: 10rem;
+
+    /* background-color: black; */
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /*justify-content: space-between;*/
+
+    
+    overflow:auto; 
+
+    scrollbar-color: green;
+    scrollbar-width:thin;
+    
+}
+
+/* .filter-cont > div{
+    
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.5rem;  
+} 
+
+.filter-cont > div > img {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(76, 76, 26, 0.306);
+    background-blend-mode: color-burn;
+} */
+
+
+/* I will try to add video streaming on the filter sectoin and on that filter will be adjusted. */
+
+.filter{
+    margin: 0.5rem;
+
+    height: 10rem;
+    width: 89%;
+
+    background-image: url("https://i.pinimg.com/564x/ae/a2/79/aea279031a2ef8621049eab1fb3bdb0f.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+
+    /* background-color:transparent; */
+    background-blend-mode: color-burn;
+}
+
+.transparent{
+   
+    height: 10rem;
+    /* background-image: url("https://i.pinimg.com/564x/01/06/c9/0106c937209cc192175f876c67fe1224.jpg"); */
+    background-color:transparent;
+   
+}
+
+.red{
+    /* background-image: url("https://i.pinimg.com/564x/ae/a2/79/aea279031a2ef8621049eab1fb3bdb0f.jpg"); */
+    background-color: rgba(255, 0, 0, 0.063);
+
+}
+
+
+
+.green{
+    
+
+    height: 10rem;
+    
+    background-color: rgba(0, 128, 0, 0.282);
+
+
+}
+
+.pink{
+
+
+    height: 10rem;
+    
+
+    background-color: rgba(255, 192, 203, 0.248);
+}
+
+.blue{
+   
+    height: 10rem;
+    
+
+    background-color: rgba(0, 0, 255, 0.175);
+
+}
+
+.orange{
+    
+
+    background-color: rgba(255, 166, 0, 0.214);
+
+}
+
+.yellow{
+    
+
+    background-color: rgba(255, 255, 0, 0.218);
+
+}
+
+.brown{
+   
+
+    background-color: rgba(42, 116, 165, 0.297);
+} 
+
+.silver{
+
+    background-color: rgba(192, 192, 192, 0.289);
+
+}
+
+.filter-layer{
+    /* margin:0 0.3rem; */
+    position: absolute;
+    top:0;
+    left:0;
+
+    height: 100%;
+    width:100%;
+    /* background-color:rgba(135, 207, 235, 0.213); */
+    background-blend-mode:color-burn;
+}
+
+
+.gallery{
+    display:inline-block;
+    position: absolute;
+    bottom : 3rem;
+    right : 2rem;
+
+   font-size: 3rem;
+    
+}
+
+.gallery:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
